@@ -1,0 +1,28 @@
+.homeWrapper {
+    background-color: greenyellow;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.homeContent h1 {
+    font-size: 14rem;
+}
+
+.homeContent button {
+    padding: 2rem 10rem;
+    font-size: 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    background-color: white;
+}
