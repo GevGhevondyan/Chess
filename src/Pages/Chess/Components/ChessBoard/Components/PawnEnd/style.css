@@ -1,0 +1,26 @@
+.pawnEndBackgroud {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.452);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pawnEndWrapper {
+    width: 46rem;
+    height: 16rem;
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.pawnEndWrapper img {
+    cursor: pointer;
+    width: 10rem;
+}

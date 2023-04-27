@@ -1,0 +1,112 @@
+.chessBoard div > div {
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.chessBoard div > div img {
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.chessBoard div > div .circle {
+    background-color: black;
+    opacity: 0.5;
+    width: 30%;
+    height: 30%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.chessBoard div > div .circle.canEat {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: 0.8rem solid black;
+    opacity: 0.3;
+}
+
+.chessBoard > div {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: column;
+}
+
+.chessBoard div > div.highLight {
+    -webkit-box-shadow: inset 0px 0px 0px 6px #f2f2f2;
+    box-shadow: inset 0px 0px 0px 6px #f2f2f2;
+}
+
+.chessBoard div > div.Wtarget {
+    background-color: rgb(211, 231, 61) !important;
+}
+
+.chessBoard div > div.Btarget {
+    background-color: rgb(182, 199, 52) !important;
+}
+
+.chessBoard > div.black {
+    flex-direction: column;
+}
+
+.chessBoard > div.white {
+    flex-direction: column-reverse;
+}
+
+.chessBoard div > div.black {
+    background-color: rgb(118, 150, 86);
+}
+.chessBoard div > div.white {
+    background-color: rgb(238, 238, 210);
+}
+
+.chessBoard.black {
+    flex-direction: row-reverse;
+}
+
+.chessBoard.white {
+    flex-direction: row;
+}
+
+.chessBoard {
+    display: flex;
+    width: 80rem;
+    height: 80rem;
+}
+
+.rowNumber,
+.colNumber {
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+}
+
+.rowNumber {
+    top: 0.4rem;
+    left: 0.4rem;
+}
+
+.colNumber {
+    bottom: 0.4rem;
+    right: 0.4rem;
+}
+
+.rowNumber.black,
+.colNumber.black {
+    color: rgb(238, 238, 210);
+}
+
+.rowNumber.white,
+.colNumber.white {
+    color: rgb(118, 150, 86);
+}
